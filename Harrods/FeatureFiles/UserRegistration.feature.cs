@@ -220,8 +220,8 @@ this.FeatureBackground();
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 0")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 0")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "123")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "Last")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ContactNumber", "1234567890")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Birthday", "20")]
@@ -231,11 +231,11 @@ this.FeatureBackground();
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please select a title")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter A-Z, \' and - characters only")]
         public virtual void RegistrationFormFieldValidations_Variant0()
         {
 #line 37
-this.RegistrationFormFieldValidations("", "First", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please select a title", ((string[])(null)));
+this.RegistrationFormFieldValidations("Mr", "123", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter A-Z, \' and - characters only", ((string[])(null)));
 #line hidden
         }
         
@@ -254,11 +254,11 @@ this.RegistrationFormFieldValidations("", "First", "Last", "1234567890", "20", "
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter A-Z, \' and - characters only")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter a first name")]
         public virtual void RegistrationFormFieldValidations_Variant1()
         {
 #line 37
-this.RegistrationFormFieldValidations("Mr", "", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter A-Z, \' and - characters only", ((string[])(null)));
+this.RegistrationFormFieldValidations("Mr", "", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter a first name", ((string[])(null)));
 #line hidden
         }
         
@@ -266,29 +266,6 @@ this.RegistrationFormFieldValidations("Mr", "", "Last", "1234567890", "20", "Jan
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 2")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 2")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "123")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "Last")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ContactNumber", "1234567890")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Birthday", "20")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BirthMonth", "January")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Country", "United Kingdom")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressKey", "BR13BN")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter a first name")]
-        public virtual void RegistrationFormFieldValidations_Variant2()
-        {
-#line 37
-this.RegistrationFormFieldValidations("Mr", "123", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter a first name", ((string[])(null)));
-#line hidden
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 3")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 3")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "")]
@@ -301,7 +278,7 @@ this.RegistrationFormFieldValidations("Mr", "123", "Last", "1234567890", "20", "
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter a last name")]
-        public virtual void RegistrationFormFieldValidations_Variant3()
+        public virtual void RegistrationFormFieldValidations_Variant2()
         {
 #line 37
 this.RegistrationFormFieldValidations("Mr", "First", "", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter a last name", ((string[])(null)));
@@ -309,9 +286,9 @@ this.RegistrationFormFieldValidations("Mr", "First", "", "1234567890", "20", "Ja
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 3")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 4")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 3")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "123")]
@@ -324,7 +301,7 @@ this.RegistrationFormFieldValidations("Mr", "First", "", "1234567890", "20", "Ja
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter A-Z, \' and - characters only")]
-        public virtual void RegistrationFormFieldValidations_Variant4()
+        public virtual void RegistrationFormFieldValidations_Variant3()
         {
 #line 37
 this.RegistrationFormFieldValidations("Mr", "First", "123", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter A-Z, \' and - characters only", ((string[])(null)));
@@ -332,9 +309,9 @@ this.RegistrationFormFieldValidations("Mr", "First", "123", "1234567890", "20", 
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 4")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 4")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "Last")]
@@ -347,7 +324,7 @@ this.RegistrationFormFieldValidations("Mr", "First", "123", "1234567890", "20", 
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter a valid telephone number without any spaces and special characters")]
-        public virtual void RegistrationFormFieldValidations_Variant5()
+        public virtual void RegistrationFormFieldValidations_Variant4()
         {
 #line 37
 this.RegistrationFormFieldValidations("Mr", "First", "Last", "", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter a valid telephone number without any spaces and special characters", ((string[])(null)));
@@ -355,9 +332,9 @@ this.RegistrationFormFieldValidations("Mr", "First", "Last", "", "20", "January"
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 5")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 5")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "Last")]
@@ -370,10 +347,37 @@ this.RegistrationFormFieldValidations("Mr", "First", "Last", "", "20", "January"
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please enter a valid mobile number.")]
-        public virtual void RegistrationFormFieldValidations_Variant6()
+        public virtual void RegistrationFormFieldValidations_Variant5()
         {
 #line 37
 this.RegistrationFormFieldValidations("Mr", "First", "Last", "123", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass1", "Please enter a valid mobile number.", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 6")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "Last")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ContactNumber", "1234567890")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Birthday", "20")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BirthMonth", "January")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Country", "United Kingdom")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressKey", "BR13BN")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "123")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "This is an invalid password. Your password must be at least 7 characters long, in" +
+            "cluding an uppercase and a lowercase character, and a number up to a maximum of " +
+            "116 characters.")]
+        public virtual void RegistrationFormFieldValidations_Variant6()
+        {
+#line 37
+this.RegistrationFormFieldValidations("Mr", "First", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "123", "testPass1", "This is an invalid password. Your password must be at least 7 characters long, in" +
+                    "cluding an uppercase and a lowercase character, and a number up to a maximum of " +
+                    "116 characters.", ((string[])(null)));
 #line hidden
         }
         
@@ -390,17 +394,13 @@ this.RegistrationFormFieldValidations("Mr", "First", "Last", "123", "20", "Janua
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Country", "United Kingdom")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressKey", "BR13BN")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "123")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "This is an invalid password. Your password must be at least 7 characters long, in" +
-            "cluding an uppercase and a lowercase character, and a number up to a maximum of " +
-            "116 characters.")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass12")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Your new password entries do not match. Please try again")]
         public virtual void RegistrationFormFieldValidations_Variant7()
         {
 #line 37
-this.RegistrationFormFieldValidations("Mr", "First", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "123", "testPass1", "This is an invalid password. Your password must be at least 7 characters long, in" +
-                    "cluding an uppercase and a lowercase character, and a number up to a maximum of " +
-                    "116 characters.", ((string[])(null)));
+this.RegistrationFormFieldValidations("Mr", "First", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass12", "Your new password entries do not match. Please try again", ((string[])(null)));
 #line hidden
         }
         
@@ -418,32 +418,9 @@ this.RegistrationFormFieldValidations("Mr", "First", "Last", "1234567890", "20",
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressKey", "BR13BN")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "testPass12")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Your new password entries do not match. Please try again")]
-        public virtual void RegistrationFormFieldValidations_Variant8()
-        {
-#line 37
-this.RegistrationFormFieldValidations("Mr", "First", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "testPass12", "Your new password entries do not match. Please try again", ((string[])(null)));
-#line hidden
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration Form Field validations: Variant 9")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Variant 9")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Title", "Mr")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:FirstName", "First")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:LastName", "Last")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ContactNumber", "1234567890")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Birthday", "20")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BirthMonth", "January")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Country", "United Kingdom")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:AddressKey", "BR13BN")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Address", "13")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Password", "testPass1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ConfirmPassword", "")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Message", "Please confirm your password")]
-        public virtual void RegistrationFormFieldValidations_Variant9()
+        public virtual void RegistrationFormFieldValidations_Variant8()
         {
 #line 37
 this.RegistrationFormFieldValidations("Mr", "First", "Last", "1234567890", "20", "January", "United Kingdom", "BR13BN", "13", "testPass1", "", "Please confirm your password", ((string[])(null)));
